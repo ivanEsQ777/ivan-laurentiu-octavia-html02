@@ -26,4 +26,41 @@
   background-color: purple;
 }
 
+.circles {
+  margin: 0 auto;
+  width: 75%;
+  border: 2px dotted brown;
+  border-radius: 20px;
+}
+.circles .circle-red {
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  border-radius: 100px;
+  background-color: purple;
+  background-color: red;
+}
+.circles .circle-green {
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  border-radius: 100px;
+  background-color: purple;
+  background-color: green;
+}
+.circles .circle-blue {
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  border-radius: 100px;
+  background-color: purple;
+  background-color: blue;
+}
+.circles .circle-border-blue {
+  border-color: blue;
+  border-width: 10px;
+  border-style: solid;
+  background-color: red;
+}
+
 /*# sourceMappingURL=style.css.map */
