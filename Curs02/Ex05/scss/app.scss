@@ -10,6 +10,42 @@
   @if $type == 'circle' {
   border-radius: $size;
   }
+
+  @if $type == 'arrow-up' {
+    border-color: magenta transparent;
+    border-style: solid;
+    border-width: 0px 20px 20px 20px;
+    height: 0px;
+    width: 0px;
+    margin: 45px;
+  }
+  
+  @if $type == 'arrow-right' {
+    border-color: transparent green;
+    border-style: solid;
+    border-width: 20px 0px 20px 20px;
+    height: 0px;
+    width: 0px;
+    margin: 45px;
+  }
+
+  @if $type == 'arrow-down' {
+    border-color: blue transparent;
+    border-style: solid;
+    border-width: 20px 20px 0px 20px;
+    height: 0px;
+    width: 0px;
+    margin: 45px;
+  }
+
+  @if $type == 'arrow-left' {
+    border-color: transparent red;
+    border-style: solid;
+    border-width: 20px 20px 20px 0px;
+    height: 0px;
+    width: 0px;
+    margin: 45px;
+  }
 }
 
 .my-square {
@@ -25,4 +61,22 @@
 .my-circle {
   @include shape('circle', 100px);
 }
+
+.arrow-up {
+  @include shape('arrow-up');
+}
+
+.arrow-right {
+  @include shape('arrow-right');
+}
+
+.arrow-down {
+  @include shape('arrow-down')
+}
+
+.arrow-left {
+  @include shape('arrow-left')
+}
+
+
 
