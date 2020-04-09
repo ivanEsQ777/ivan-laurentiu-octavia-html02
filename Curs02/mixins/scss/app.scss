@@ -15,10 +15,6 @@
 
   &::before {
     @include arrow-left($arrow-color);
-    @if $arrow-direction == 'left' {
-      @include arrow-left(#000);
-
-    }
     @if $arrow-direction == 'right' {
       transform: rotate(180deg);
     }
