@@ -29,13 +29,13 @@ body {
 }
 
 .box-4 {
-  margin-top: $lg; 
-  border-width: $md;
-  padding: 25px;
+  margin-top: $lg*2+6; 
+  border-width: $xs/2;
+  padding: $xs*3;
 }
 
 .box-5 {
-  margin: $sm $xl;
-  border-width: $md; 
-  padding: $lg;
+  margin: $lg*2-4 $xs/2;
+  border-width: $xs - 1; 
+  padding: $xs/2 $xs/2 $xs/2 $sm + 2;
 }

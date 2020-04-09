@@ -1,4 +1,7 @@
 .squares {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
   width: 80%;
   margin: 0 auto;
   padding: 10px;
@@ -22,6 +25,36 @@
 
 .square-purple {
   background-color: purple;
+}
+
+.circles {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 802px;
+  border: 1px solid #000;
+}
+
+.circle, .circle-blue, .circle-green, .circle-red {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  border-radius: 200px;
+  background-color: brown;
+}
+
+.circle-red {
+  background-color: red;
+}
+
+.circle-green {
+  background-color: green;
+}
+
+.circle-blue {
+  background-color: blue;
 }
 
 /*# sourceMappingURL=style.css.map */
