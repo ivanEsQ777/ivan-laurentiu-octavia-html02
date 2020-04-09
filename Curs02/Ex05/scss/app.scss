@@ -1,3 +1,5 @@
+
+
 @mixin shape($type: 'square', $size: 200px) {
   width: $size;
   height: $size;
@@ -10,41 +12,44 @@
   @if $type == 'circle' {
   border-radius: $size;
   }
+}
+
+  .arrows {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @mixin arrow ($type: 'arrow', $size: 200px) {
+    width: $size;
+    height: $size;
+    padding: 0;
+
 
   @if $type == 'arrow-up' {
-    border-color: magenta transparent;
-    border-style: solid;
-    border-width: 0px 20px 20px 20px;
-    height: 0px;
-    width: 0px;
-    margin: 45px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
   }
   
   @if $type == 'arrow-right' {
-    border-color: transparent green;
-    border-style: solid;
-    border-width: 20px 0px 20px 20px;
-    height: 0px;
-    width: 0px;
-    margin: 45px;
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+    border-right: transparent;
   }
 
   @if $type == 'arrow-down' {
-    border-color: blue transparent;
-    border-style: solid;
-    border-width: 20px 20px 0px 20px;
-    height: 0px;
-    width: 0px;
-    margin: 45px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+    border-bottom: transparent;
   }
 
   @if $type == 'arrow-left' {
-    border-color: transparent red;
-    border-style: solid;
-    border-width: 20px 20px 20px 0px;
-    height: 0px;
-    width: 0px;
-    margin: 45px;
+    border-top: 50px solid transparent;
+    border-right: 100px solid red;
+    border-bottom: 50px solid transparent;;
   }
 }
 
@@ -63,19 +68,19 @@
 }
 
 .arrow-up {
-  @include shape('arrow-up');
+  @include arrow('arrow-up', 0px);
 }
 
 .arrow-right {
-  @include shape('arrow-right');
+  @include arrow('arrow-right', 0px);
 }
 
 .arrow-down {
-  @include shape('arrow-down')
+  @include arrow('arrow-down', 0px);
 }
 
 .arrow-left {
-  @include shape('arrow-left')
+  @include arrow('arrow-left', 0px);
 }
 
 

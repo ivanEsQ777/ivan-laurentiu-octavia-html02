@@ -1,3 +1,9 @@
+.arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .my-square {
   width: 200px;
   height: 200px;
@@ -20,51 +26,41 @@
 }
 
 .arrow-up {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #000;
-  border-color: magenta transparent;
-  border-style: solid;
-  border-width: 0px 20px 20px 20px;
-  height: 0px;
   width: 0px;
-  margin: 45px;
+  height: 0px;
+  padding: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
 }
 
 .arrow-right {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #000;
-  border-color: transparent green;
-  border-style: solid;
-  border-width: 20px 0px 20px 20px;
-  height: 0px;
   width: 0px;
-  margin: 45px;
+  height: 0px;
+  padding: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid red;
+  border-bottom: 50px solid transparent;
+  border-right: transparent;
 }
 
 .arrow-down {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #000;
-  border-color: blue transparent;
-  border-style: solid;
-  border-width: 20px 20px 0px 20px;
-  height: 0px;
   width: 0px;
-  margin: 45px;
+  height: 0px;
+  padding: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid red;
+  border-bottom: transparent;
 }
 
 .arrow-left {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #000;
-  border-color: transparent red;
-  border-style: solid;
-  border-width: 20px 20px 20px 0px;
-  height: 0px;
   width: 0px;
-  margin: 45px;
+  height: 0px;
+  padding: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid red;
+  border-bottom: 50px solid transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
