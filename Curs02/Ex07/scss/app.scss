@@ -22,12 +22,10 @@
       background-color: gray;
     }
   }
+  @else if $i % 2 == 1 {
+    .box-0#{$i} {
+      border-style: dashed;
+    }
+  } 
 }
 
-@for $i from 1 through 10 {
-  @if $i % 2 != 0 {
-    .box-0#{$i} {
-    border-style: dashed;
-    }
-  }
-}

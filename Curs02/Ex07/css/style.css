@@ -50,44 +50,44 @@
   border-width: 10px;
 }
 
-.box-02 {
-  background-color: gray;
-}
-
-.box-04 {
-  background-color: gray;
-}
-
-.box-06 {
-  background-color: gray;
-}
-
-.box-08 {
-  background-color: gray;
-}
-
-.box-010 {
-  background-color: gray;
-}
-
 .box-01 {
   border-style: dashed;
+}
+
+.box-02 {
+  background-color: gray;
 }
 
 .box-03 {
   border-style: dashed;
 }
 
+.box-04 {
+  background-color: gray;
+}
+
 .box-05 {
   border-style: dashed;
+}
+
+.box-06 {
+  background-color: gray;
 }
 
 .box-07 {
   border-style: dashed;
 }
 
+.box-08 {
+  background-color: gray;
+}
+
 .box-09 {
   border-style: dashed;
+}
+
+.box-010 {
+  background-color: gray;
 }
 
 /*# sourceMappingURL=style.css.map */
