@@ -25,3 +25,11 @@ $margins: ("xs": 4px, "sm": 8px, "md": 16px, "lg": 32px);
     margin: $value;
   }
 }
+
+$paddings: ("xs": 4px, "sm": 8px, "md": 16px, "lg": 32px);
+
+@each $key, $value in $paddings {
+  .p-#{$key} {
+    padding: $value;
+  }
+}
