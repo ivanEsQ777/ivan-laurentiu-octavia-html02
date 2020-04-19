@@ -7,10 +7,13 @@
   <title>MonoChrome</title>
 
   <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <div class="header-top cont">
+      <div class="header-shipping"><i class="fas fa-plane"></i>free shipping</div>
+      <h1>MONOCHROME</h1>
       <div class="header-contact">
         <ul>
           <li><a href="" title="Youtube"><i class="fab fa-youtube"></i></a></li>
@@ -25,23 +28,22 @@
       <!-- .header-contact  -->
 
       <div class="header-controls">
-        <i class="fas fa-bars"></i>
-        <form action="" class="header-search">
-          <input type="text" class="site-search">
+        <form action="" class="header-search-d">
+          <input type="text" class="site-search-d">
         </form>
         <!-- .header-search  -->
 
         <div class="user-controls">
-          <a href="" class="user-icon"><i class="far fa-user"></i></a>
+          <a href="" class="user-icon mob"><i class="far fa-user"></i></a>
         </div>
         <!-- .user-controls  -->
 
         <div class="user-favourites">
-          <a href="" class="favourites-icon"><i class="far fa-heart"></i></a>
+          <a href="" class="favourites-icon mob"><i class="far fa-heart"></i></a>
         </div>
         <!-- .user-favourites  -->
 
-        <div class="cart">
+        <div class="cart mob">
           <a href="" title="cart"><i class="fas fa-shopping-bag"></i></a>
         </div>
         <!-- .cart  -->
@@ -69,6 +71,14 @@
       </div>
       <!-- .nav-container  -->
 
+      <i class="fas fa-bars"></i>
+      <form action="" class="header-search-m">
+        <input type="text" 
+          class="site-search-m"
+          placeholder="search"
+        >
+      </form>
+      <i class="fas fa-search"></i>
     </div>
     <!-- .header-bottom  -->
 
@@ -84,12 +94,13 @@
 
   <main class="content-main">
     <section class="catalog-preview">
-      <h1>New Stuff</h1>
-      <h1>Spring Collection</h1>
+      <p>New Stuff</p>
+      <p>Spring Collection</p>
       <div class="catalog-preview-tiles">
         <article class="product-tile">
           <a href="" class="product-image-container">
             <img src="/img/products/dark-black-desktop.png" alt="" title="Monochrome">
+            <span class="product-badge"><i class="far fa-heart"></i></span>
           </a>
 
           <a href=""
@@ -110,6 +121,7 @@
         <article class="product-tile">
           <a href="" class="product-image-container">
             <img src="/img/products/round-purple-desktop.png" alt="" title="Monochrome">
+            <span class="product-badge"><i class="far fa-heart"></i></span>
           </a>
 
           <a href=""
@@ -130,6 +142,7 @@
         <article class="product-tile">
           <a href="" class="product-image-container">
             <img src="/img/products/light-black-desktop.png" alt="" title="Monochrome">
+            <span class="product-badge"><i class="far fa-heart"></i></span>
           </a>
 
           <a href=""
@@ -150,6 +163,7 @@
         <article class="product-tile">
           <a href="" class="product-image-container">
             <img src="/img/products/square-purple-desktop.png" alt="" title="Monochrome">
+            <span class="product-badge"><i class="far fa-heart"></i></span>
           </a>
 
           <a href=""
@@ -174,8 +188,8 @@
     <!-- catalog-preview -->
 
     <section class="catalog-preview">
-      <h1>Most loved</h1>
-      <h1>Best reviewed</h1>
+      <p>Most loved</p>
+      <p>Best reviewed</p>
       <div class="catalog-preview-tiles">
         <article class="product-tile">
           <a href="" class="product-image-container">
@@ -506,25 +520,26 @@
     <div class="footer-bottom">
 
       <ul>
-        <a href="">call us</a>
-        <a href="">CALL US +44 (0)10 2345 6789 </a>
-        <a href="">EMAIL CUSTOMER CARE</a>
-        <a href="">see mobile version</a>
+        <li><a href="">call us</a></li>
+        <li><a href="">CALL US +44 (0)10 2345 6789 </a></li>
+        <li><a href="">EMAIL CUSTOMER CARE</a></li>
+        <li><a href="">see mobile version</a></li>
       </ul>
 
       <h1>How can we Help?</h1>
+
       <ul>
-        <a href="">about us</a>
-        <a href="">careers</a>
-        <a href="">affiliates</a>
-        <a href="">advertising</a>
+        <li><a href="">about us</a></li>
+        <li><a href="">careers</a></li>
+        <li><a href="">affiliates</a></li>
+        <li><a href="">advertising</a></li>
       </ul>
 
       <ul>
-        <a href="">style and fit</a>
-        <a href="">faqs</a>
-        <a href="">delivery</a>
-        <a href="">returns</a>
+        <li><a href="">style and fit</a></li>
+        <li><a href="">faqs</a></li>
+        <li><a href="">delivery</a></li>
+        <li><a href="">returns</a></li>
       </ul>
 
       <form action="">
