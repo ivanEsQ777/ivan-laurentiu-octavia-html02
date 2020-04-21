@@ -30,3 +30,13 @@
     }
   }
 }
+
+.hack-menu {
+  display: none;
+
+  &:checked + .nav-main {
+    left: 0;
+  }
+}
+
+
