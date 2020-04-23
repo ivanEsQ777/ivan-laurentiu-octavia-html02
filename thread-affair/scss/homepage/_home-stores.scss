@@ -1,0 +1,24 @@
+.home-stores {
+  $border-radius: 18px;
+  h1 {
+    font-size: 41px;
+    color: $gray-tertiary;
+  }
+
+  .stores-long-description {
+    display: none;
+  }
+
+  .store-short-description {
+    border: 1px solid $gray-secondary;
+    padding: 12px;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    text-align: center;
+
+    img {
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+  }
+}
