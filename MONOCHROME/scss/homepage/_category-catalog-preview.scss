@@ -1,0 +1,30 @@
+.category-catalog-preview {
+
+  .category-preview-tiles {
+  display: flex;
+
+  article:nth-child(3) {
+    display: none;
+  }
+
+  article:nth-child(4) {
+    display: none;
+  }
+
+  article:nth-child(5) {
+    display: none;
+  }
+
+  article:nth-child(6) {
+    display: none;
+  }
+
+  .product-tile {
+    width: 148px;
+
+    img {
+      width: 100%;
+    }
+    }
+  }
+}

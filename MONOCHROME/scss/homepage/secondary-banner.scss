@@ -1,10 +1,29 @@
 .secondary-banner {
+  margin-bottom: 35px;
 
-.secondary-banner-container {
-  background: url(/img/banners/secondary-banner.png)
-  no-repeat
-  center
-  center;
-  background-size: cover;
+  h1 {
+    font-family: 'Playfair-Display';
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  img {
+    height: 176px;
+    width: 100%;
+    margin-bottom: 26px;
+  }
+
+  p {
+    display: none;
   }
 }
+
+.secondary-banner p:nth-of-type(1) {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  color: $brand-main;
+  line-height: 32px;
+  word-spacing: 2.5px;
+}
+
