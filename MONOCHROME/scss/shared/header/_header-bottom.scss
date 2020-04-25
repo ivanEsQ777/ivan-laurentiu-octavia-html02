@@ -20,12 +20,12 @@ opacity: 1;
       color: #FFFFFF;
       background-color: #2B2B2B;
       width: 100%;
-      border: 1px solid transparent;
+      border: 0.2px solid #ffffff;
     }
     ::placeholder {
       font-size: 10px;
       font-style: italic;
-      font-family: 'Roboto', serif;
+      font-family: Roboto, sans-serif;
       position: relative;
       top: -2px;
       left: 2px;

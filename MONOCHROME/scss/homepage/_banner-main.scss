@@ -1,0 +1,22 @@
+.banner-main {
+  margin-bottom: 35px;
+
+  min-height: 177px;
+  background: url('/img/banners/banner-main-mobile.png')
+  no-repeat
+  center
+  center;
+  background-size: cover;
+  position: relative;
+
+  .banner-main-button {
+    position: absolute;
+    bottom: 32px;
+    right: 35px;
+    width: 70px;
+    height: 22px;
+    line-height: 16px;
+    font-size: 10px;
+    border: 1px transparent $white;
+  }
+}

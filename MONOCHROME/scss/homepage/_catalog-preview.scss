@@ -1,0 +1,60 @@
+.catalog-preview {
+  font-family: Playfair-Display;
+
+  p:first-child {
+    display: none;
+  }
+
+  p {
+    text-align: center;
+    font-family: Playfair-Display;
+    font-weight: 700;
+    font-size: 18px;
+    color: #2B2B2B;
+  }
+}
+
+.catalog-preview-tiles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 35px;
+
+  .product-tile {
+    margin-top: 10px;
+    width: 148px;
+    position: relative;
+    text-align: center;
+  }
+
+  .product-badge {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    color: $black;
+    font-size: 17px;
+  }
+
+  .product-title {
+    font-family: Playfair-Display;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: $brand-main;
+  }
+
+  .product-pricing {
+    font-size: 15px;
+  }
+
+  article:nth-child(3) {
+    display: none;
+  }
+
+  article:nth-child(4) {
+    display: none;
+  }
+
+    img {
+      width: 100%;
+    }
+  }

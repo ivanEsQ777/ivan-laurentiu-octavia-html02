@@ -1,17 +1,13 @@
 .header-top {
-  h1 {
-    margin-left: 18px;
-    font-family: 'Baskervville', serif;
-    font-size: 19px;
-    color: #000;
-    font-weight: 700;
-  }
+
   .header-shipping {
     text-align: center;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: Roboto, sans-serif;
     margin-bottom: 19px;
+    color: #5E5A5A;
+    font-weight: 500;
+
     i {
       display: inline-block;
       width: 25px;
@@ -19,20 +15,31 @@
       color: #5E5A5A;
     }
   }
+
+  h1 {
+    font-family: 'Baskerville Old Face BQ', serif;
+    font-size: 19px;
+    color: #000;
+    font-weight: 500;
+  }
+
   .header-contact {
     display: none;
   }
+
   .header-controls {
     display: flex;
     flex-direction: row;
     position: absolute;
     top: 42px;
-    right: 40px;
+    right: 30px;
+
     a {
       padding: 0 13px;
       font-size: 17px;
       color: #000;
     }
+    
     .header-search-d {
       display: none;
     }
