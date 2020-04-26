@@ -1,4 +1,12 @@
 .category-catalog-preview {
+  border-top: 1px solid #CCCCCC;
+  padding-top: 8px;
+  margin-bottom: 29px;
+  text-align: center;
+
+  .category-action {
+    display: none;
+  }
 
   .category-preview-tiles {
   display: flex;
@@ -21,10 +29,38 @@
 
   .product-tile {
     width: 148px;
+    position: relative;
+
+    .product-image-container {
+
+      .product-badge {
+        position: absolute;
+        top: 0px;
+        right: 15px;
+        color: $brand-main;
+      }
+    }
 
     img {
       width: 100%;
-    }
+      }
     }
   }
+
+  .category-action-mobile {
+    display: inline-block;
+    padding: 9px 20px;
+    border: 1px solid $brand-main;
+    color: $brand-main;
+    font-size: 12px;
+    font-weight: 500;
+    width: 84px;
+    height: 32px;
+    line-height: 13px;
+    margin-top: 35px;
+  }
+}
+
+.content-main {
+  margin-bottom: 35px;
 }

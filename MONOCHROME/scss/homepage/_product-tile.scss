@@ -1,0 +1,18 @@
+.product-tile {
+
+  .product-title {
+    color: $brand-main;
+    font-size: 16px;
+    font-family: Playfair-Display;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .product-pricing {
+    color: $brand-main;
+    font-size: 15px;
+    font-family: Playfair-Display;
+    font-weight: 500;
+    text-align: center;
+  }
+}

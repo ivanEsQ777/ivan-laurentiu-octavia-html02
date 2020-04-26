@@ -1,12 +1,12 @@
 .header-bottom {
   background: #2B2B2B 0% 0% no-repeat padding-box;
-opacity: 1;
+  opacity: 1;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 50px;
   .fa-bars {
-    color: #fff;
+    color: $white;;
     font-size: 35px;
   }
   .nav-container {
@@ -14,13 +14,13 @@ opacity: 1;
     height: 20px;
   }
   .header-search-m {
-    border: 0.2px solid #FFFF;
+    border: 0.2px solid $white;
     width: 230px;
     input {
-      color: #FFFFFF;
+      color: $white;;
       background-color: #2B2B2B;
       width: 100%;
-      border: 0.2px solid #ffffff;
+      border: 0.2px solid $white;
     }
     ::placeholder {
       font-size: 10px;
