@@ -70,3 +70,33 @@
   flex-grow: 2;
 }
 
+.flex-container-04 {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.flex-container-04 :last-child {
+  flex-grow: 1;
+}
+
+.flex-container-05 {
+  align-items: flex-end;
+}
+
+.flex-container-05 .flex-item-02 {
+  flex-grow: 1;
+}
+
+.flex-container-05 .flex-item-03 {
+  flex-grow: 2;
+}
+
+.flex-container-06 {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.flex-container-06 .flex-item:nth-of-type(4) {
+  flex-grow: 1;
+}
+

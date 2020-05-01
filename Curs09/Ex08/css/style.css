@@ -87,6 +87,44 @@
   flex-shrink: 3;
 }
 
+.flex-container-04 {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.flex-container-04 .item-02 {
+  flex-shrink: 3;
+}
+
+.flex-container-04 .item-03 {
+  flex-shrink: 2;
+}
+
+.flex-container-05 {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.flex-container-05 :nth-of-type(2) {
+  flex-shrink: 2;
+}
+
+.flex-container-06 {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-container-06 :nth-child(3) {
+  flex-shrink: 3;
+}
+
+.flex-container-06 :nth-child(5) {
+  flex-shrink: 0;
+}
+
+
+
 
 
 

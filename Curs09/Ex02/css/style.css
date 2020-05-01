@@ -21,7 +21,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-basis: 75px;
-  max-width: 75px; 
+  max-width: 75px;
+  width: 75px; 
   height: 75px; 
   flex-shrink: 1;
   border: 1px solid red; 
@@ -62,4 +63,20 @@ body {
 .flex-container-03 {
   flex-direction: column;
   justify-content: space-between;
+}
+
+.flex-container-04 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container-05 {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.flex-container-06 {
+  flex-direction: column;
 }
