@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <form class="container mb-4">
+    <div class="row">
+      <div class="col">
+        <h1>Formular produs</h1>
+      </div>
+    </div>
+    <!-- row  -->
+
+    <div class="row">
+      <div class="col">
+        <h2>Produs</h2>
+      </div>
+    </div>
+    <!-- row  -->
+
+    <div class="row">
+      <div class="col">
+        <h6>Imagine principala *</h6>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="custom-file">
+          <label class="custom-file-label" 
+            for="add-file"
+          >No file chosen</label>
+          <input type="file" 
+            class="custom-file-input" 
+            id="add-file"
+            required
+          >
+        </div>
+        <!-- add file  -->
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label for="cathegory"
+              class="input-group-text">Categorie *</label>
+          </div>
+
+          <select class="form-control" 
+            id="cathegory">
+            <option value="">--Categorie--</option>
+          </select>
+        </div>
+        <!-- cathegory  -->
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label for="brand"
+              class="input-group-text">Brand *</label>
+          </div>
+
+          <select class="form-control" 
+            id="brand">
+            <option value="">--Brand--</option>
+          </select>
+        </div>
+        <!-- brand  -->
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label for="supplier"
+              class="input-group-text">Furtnizor *</label>
+          </div>
+
+          <select class="form-control" 
+            id="supplier">
+            <option value="">--Furtnizor *--</option>
+          </select>
+        </div>
+        <!-- supplier  -->
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label for="product-name"
+              class="input-group-text"
+            >Numele produsului *</label>
+          </div>
+          <input type="text"
+            class="form-control"
+            id="product-name"
+            required
+            placeholder="Numele produsului *"
+          >
+        </div>
+        <!-- numele produsului  -->
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label 
+              for="long-description"
+              class="input-group-text"
+            >Descriere lunga *</label>
+          </div>
+          <textarea 
+            id="long-description"
+            class="form-control" 
+            rows="4"
+            required
+            placeholder="Descriere lunga *"
+          ></textarea>
+        </div>
+        <!-- long description  -->
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label 
+              for="short-description"
+              class="input-group-text"
+            >Descriere scurta *</label>
+          </div>
+          <textarea 
+            id="short-description"
+            class="form-control" 
+            rows="4"
+            required
+            placeholder="Descriere scurta *"
+          ></textarea>
+        </div>
+        <!-- short description  -->
+      </div>
+    </div>
+    <!-- row  -->
+
+    <div class="row">
+      <div class="col">
+        <h2>Pret</h2>
+      </div>
+    </div>
+    <!-- row  -->
+
+    <div class="row">
+      <div class="col">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <input id="price-display" type="checkbox">
+            </div>
+          </div>
+          <label for="price-display"
+            class="input-group-text"
+          >Afiseaza oferta pe produs</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label for="price"
+              class="input-group-text"
+            >Pret *</label>
+          </div>
+          <input type="text"
+            class="form-control"
+            id="price"
+            required
+            placeholder="Pret *"
+          >
+        </div>
+        <!-- price  -->
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <input id="price-discount-check" type="checkbox">
+            </div>
+          </div>
+          <label for="price-discount-check"
+            class="input-group-text"
+          >Afiseaza pret redus</label>
+        </div>
+        <!-- price-discount  -->
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label for="price-discount"
+              class="input-group-text"
+            >Pret redus</label>
+          </div>
+
+          <input type="text"
+            class="form-control"
+            id="price-discount"
+            placeholder="Pret redus"
+            required
+          >
+        </div>
+
+      </div>
+    </div>
+    <!-- row  -->
+
+    <div class="row">
+      <div class="col">
+        <h2>Brand (optional)</h2>
+      </div>
+    </div>
+    <!-- row  -->
+
+    <div class="row">
+      <div class="col">
+        <div class="custom-control custom-switch">
+          <input type="checkbox" 
+            class="custom-control-input" 
+            id="brand-switch">
+          <label class="custom-control-label" 
+            for="brand-switch"
+          >Adauga brand</label>
+        </div>
+              <!-- brand-switch  -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label for="brand-name"
+              class="input-group-text"
+            >Nume Brand</label>
+          </div>
+          <input type="text"
+            class="form-control"
+            id="brand-name"
+            placeholder="Nume brand"
+          >
+        </div>
+        <!-- brand name -->
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label 
+              for="brand-description"
+              class="input-group-text"
+            >Descriere brand</label>
+          </div>
+          <textarea 
+            id="brand-description"
+            class="form-control" 
+            rows="5"
+            placeholder="Descriere brand"
+          ></textarea>
+        </div>
+        <!-- brand description  -->
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label 
+              for="brand-adress"
+              class="input-group-text"
+            >Adresa brand</label>
+          </div>
+          <textarea 
+            id="brand-adress"
+            class="form-control" 
+            rows="4"
+            required
+            placeholder="Adresa brand"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <!-- row  -->
+
+    <div class="row">
+      <div class="col">
+        <h2>Furtnizor (optional)</h2>
+      </div>
+    </div>
+    <!-- row  -->
+
+    <div class="row">
+      <div class="col">
+        <div class="custom-control custom-switch">
+          <input type="checkbox" 
+            class="custom-control-input" 
+            id="supplier-switch">
+          <label class="custom-control-label" 
+            for="supplier-switch"
+          >Adauga furnizor</label>
+        </div>
+              <!-- supplier-switch  -->
+      </div>
+    </div>
+    <!-- row  -->
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label for="supplier-name"
+              class="input-group-text"
+            >Nume furnizor</label>
+          </div>
+
+          <input type="text"
+            class="form-control"
+            id="supplier-name"
+            placeholder="Nume Furnizor"
+          >
+        </div>
+        <!-- supplier name  -->
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label 
+              for="supplier-description"
+              class="input-group-text"
+            >Descriere furnizor</label>
+          </div>
+          <textarea 
+            id="supplier-description"
+            class="form-control" 
+            rows="4"
+            required
+            placeholder="Descriere furnizor"
+          ></textarea>
+        </div>
+        <!-- supplier-description  -->
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <label 
+              for="supplier-adress"
+              class="input-group-text"
+            >Adresa furtnizor</label>
+          </div>
+          <textarea 
+            id="supplier-adress"
+            class="form-control" 
+            rows="4"
+            required
+            placeholder="Descriere furnizor"
+          ></textarea>
+        </div>
+        <!-- supplier-description  -->
+      </div>
+
+    </div>
+    <!-- row  -->
+
+    <div class="row">
+      <div class="col text-center">
+        <button type="reset" class="btn btn-outline-danger btn-lg">Reseteaza tot</button>
+        <input class="btn btn-primary btn-lg" type="submit" value="Salveaza produs">
+      </div>
+    </div>
+
+
+
+  </form>
+  <!-- form  -->
+</body>
+</html>
