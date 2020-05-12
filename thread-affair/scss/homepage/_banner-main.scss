@@ -6,18 +6,38 @@
   text-align: center;
   margin: 0 0 50px 0;
 
+  @include media-breakpoint-up(md) {
+    text-align: left;
+  }
+
   h1 {
     font-size: 49px;
     line-height: 50px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 75px;
+      line-height: 77px;
+      font-weight: bold;
+    }
   }
 
   h2 {
     font-size: 27px;
     line-height: 30px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 42px;
+      line-height: 45px;
+      font-weight: 300;
+    }
   }
 
   p {
     margin-bottom: 24px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -29,8 +49,28 @@
   justify-content: center;
   position: relative;
 
+  @include media-breakpoint-up(md) {
+    align-items: flex-start;
+
+    .btn-main {
+      color: $brand-main;
+      background-color: transparent;
+      border: 2px solid $brand-main;
+
+      &:hover {
+        background-color: $brand-main;
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+
   & > div {
     position: absolute;
     bottom: 0;
+
+    @include media-breakpoint-up(md) {
+      bottom: 16px;
+    }
   }
 }
