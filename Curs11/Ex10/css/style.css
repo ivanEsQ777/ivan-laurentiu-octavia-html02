@@ -26,4 +26,21 @@
 }
 /* can't touch this 🔨 */
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 230px 1fr 400px 2fr 350px 10px;
+  grid-template-rows: 150px;
+}
+
+.grid-item-1 {
+  justify-self: end;
+  align-self: end;
+}
+
+.grid-item-2 {
+  justify-content: center;
+  align-self: start;
+}
+
+
 
