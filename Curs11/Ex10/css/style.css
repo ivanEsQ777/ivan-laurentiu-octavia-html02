@@ -42,5 +42,22 @@
   align-self: start;
 }
 
+.grid-item-3 {
+  justify-self: end;
+  align-self: center;
+}
+
+.grid-item-4 {
+  justify-self: start;
+  align-self: flex-start;
+}
+
+.grid-item-5 {
+  justify-self: end;
+  align-self: end;
+}
+
+
+
 
 

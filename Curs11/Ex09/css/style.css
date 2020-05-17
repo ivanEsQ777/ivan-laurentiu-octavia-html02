@@ -36,3 +36,50 @@
 .grid-item-5 {
   grid-column: 1 / span 2;
 }
+
+body .grid-container:first-child .grid-item-5 {
+  order: 3;
+}
+
+body .grid-container:first-child .grid-item-3 {
+  order: 2;
+}
+
+body .grid-container:first-child .grid-item-2 {
+  order: 1;
+}
+
+body .grid-container:nth-child(2) .grid-item-1 {
+  order: 2;
+}
+
+body .grid-container:nth-child(2) .grid-item-2 {
+  order: 1;
+}
+
+body .grid-container:nth-child(2) .grid-item-4 {
+  order: -1;
+}
+
+body .grid-container:nth-child(3) .grid-item-4 {
+  order: 3;
+}
+
+body .grid-container:nth-child(3) .grid-item-1 {
+  order: 2;
+}
+
+body .grid-container:nth-child(3) .grid-item-2 {
+  order: 1;
+}
+
+body .grid-container:nth-child(4) .grid-item-2 {
+  order: 2;
+}
+
+body .grid-container:nth-child(4) .grid-item-3 {
+  order: 1;
+}
+
+
+
