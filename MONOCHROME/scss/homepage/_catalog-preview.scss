@@ -1,16 +1,31 @@
 .catalog-preview {
   font-family: Playfair-Display;
 
+  @include media-breakpoint-up('md') {
+    margin-top: 41px;
+    margin-bottom: 100px;
+  }
+
   p:first-child {
     display: none;
+
+    @include media-breakpoint-up('md') {
+      display: block;
+      font-size: 35px;
+      font-weight: 700;
+    }
   }
 
   p {
     text-align: center;
-    font-family: Playfair-Display;
+    font-family: 'Playfair-Display';
     font-weight: 700;
     font-size: 18px;
     color: #2B2B2B;
+
+    @include media-breakpoint-up('md') {
+      display: none;
+    }
   }
 }
 
@@ -20,11 +35,25 @@
   margin-top: 10px;
   margin-bottom: 35px;
 
+  @include media-breakpoint-up('md') {
+    margin-top: 0px;
+  }
+
+  @include media-breakpoint-up('md') {
+    display: flex;
+    justify-content: center;
+  }
+
   .product-tile {
     margin-top: 10px;
     width: 148px;
     position: relative;
     text-align: center;
+
+    @include media-breakpoint-up('md') {
+      width: 320px;
+      margin-top: 23px;
+    }
   }
 
   .product-badge {
@@ -33,36 +62,71 @@
     right: 15px;
     color: $black;
     font-size: 17px;
+
+    @include media-breakpoint-up('md') {
+      font-size: 20px;
+      top: 10px;
+      right: 20px;
+    }
   }
 
   .product-title {
-    font-family: Playfair-Display;
+    font-family: 'Playfair-Display';
     font-weight: 700;
     text-transform: capitalize;
     color: $brand-main;
+
+    @include media-breakpoint-up('md') {
+      font-size: 22px;
+    }
   }
 
   .product-pricing {
     font-size: 15px;
-  }
+}
 
   article:nth-child(3) {
     display: none;
+
+    @include media-breakpoint-up('md') {
+      display: block;
+    }
   }
 
   article:nth-child(4) {
     display: none;
+
+    @include media-breakpoint-up('md') {
+      display: block;
+    }
   }
 
   article:nth-child(5) {
     display: none;
+
+    @include media-breakpoint-up('md') {
+      display: block;
+    }
   }
 
   article:nth-child(6) {
     display: none;
+
+    @include media-breakpoint-up('md') {
+      display: block;
+    }
   }
 
     img {
       width: 100%;
     }
   }
+
+  @include media-breakpoint-up('md') {
+    .catalog-preview:nth-child(2) {
+      .product-tile:nth-child(1), .product-tile:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+

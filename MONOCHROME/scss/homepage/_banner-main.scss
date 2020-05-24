@@ -9,6 +9,10 @@
   background-size: cover;
   position: relative;
 
+  @include media-breakpoint-up('md') {
+    display: none;
+  }
+
   .banner-main-button {
     position: absolute;
     bottom: 32px;

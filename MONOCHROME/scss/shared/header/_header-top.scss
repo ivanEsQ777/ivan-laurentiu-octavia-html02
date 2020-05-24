@@ -1,4 +1,14 @@
 .header-top {
+  @include media-breakpoint-up('md') {
+    min-height: 475px;
+    background-image: url('/img/banners/header-top-banner.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+  }
 
   .header-shipping {
     text-align: center;
@@ -7,6 +17,10 @@
     margin-bottom: 19px;
     color: #5E5A5A;
     font-weight: 500;
+
+    @include media-breakpoint-up('md') {
+      display: none;
+    }
 
     i {
       width: 25px;
@@ -21,10 +35,39 @@
     color: #000;
     font-weight: 500;
     text-align: left;
+
+    @include media-breakpoint-up('md') {
+      display: none;
+    }
   }
 
   .header-contact {
     display: none;
+
+    @include media-breakpoint-up('md') {
+      display: flex;
+      position: relative;
+      top: 42px;
+      left: 420px;
+
+      ul li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      a {
+        color: $white;
+      }
+
+      p {
+        display: inline-block;
+        margin-left: 50px;
+        font-family: 'Playfair Display';
+        font-size: 16px;
+        font-weight: lighter;
+        opacity: 0.85;
+      }
+    }
   }
 
   .header-controls {
@@ -34,6 +77,11 @@
     top: 42px;
     right: 30px;
 
+    @include media-breakpoint-up('md') {
+      margin-right: 400px;
+      top: 42px;
+    }
+
     a {
       padding: 0 13px;
       font-size: 17px;
@@ -42,6 +90,22 @@
     
     .header-search-d {
       display: none;
+
+      @include media-breakpoint-up('md') {
+        display: block;
+        margin-right: 60px;
+
+        .site-search-d {
+          border-color: transparent;
+
+          &::placeholder {
+            color: #2B2B2B;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: 'Roboto';
+          }
+        }
+      }
     }
   }
 }

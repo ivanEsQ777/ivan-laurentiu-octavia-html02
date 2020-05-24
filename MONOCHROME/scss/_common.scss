@@ -2,5 +2,9 @@
   width: 100%;
   max-width: $container-width;
   margin: 0 auto;
-  display: block;	
+  display: block;
+
+  @include media-breakpoint-up('md') {
+    max-width: 1920px;
+  }
 }
