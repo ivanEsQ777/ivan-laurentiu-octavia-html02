@@ -4,8 +4,35 @@
   margin-bottom: 29px;
   text-align: center;
 
+  @include media-breakpoint-up('md') {
+    margin: 0 auto;
+    max-width: 1356px;
+    width: 100%;
+    border-top: transparent;
+  }
+
   .category-action {
     display: none;
+
+    @include media-breakpoint-up('md') {
+      display: block;
+      display: inline-block;
+      padding: 9px 20px;
+      border: 1px solid $brand-main;
+      color: $brand-main;
+      font-size: 12px;
+      font-weight: 500;
+      width: 84px;
+      height: 32px;
+      line-height: 13px;
+      margin-top: 35px;
+    }
+  }
+
+  @include media-breakpoint-up('md') {
+    article:nth-child(1), article:nth-child(2) {
+      display: none;
+    }
   }
 
   .category-preview-tiles {
@@ -13,23 +40,43 @@
 
   article:nth-child(3) {
     display: none;
+
+    @include media-breakpoint-up('md') {
+      display: block;
+    }
   }
 
   article:nth-child(4) {
     display: none;
+
+    @include media-breakpoint-up('md') {
+      display: block;
+    }
   }
 
   article:nth-child(5) {
     display: none;
+
+    @include media-breakpoint-up('md') {
+      display: block;
+    }
   }
 
   article:nth-child(6) {
     display: none;
+
+    @include media-breakpoint-up('md') {
+      display: block;
+    }
   }
 
   .product-tile {
     width: 148px;
     position: relative;
+
+    @include media-breakpoint-up('md') {
+      width: 321px;
+    }
 
     .product-image-container {
 
@@ -64,3 +111,4 @@
 .content-main {
   margin-bottom: 35px;
 }
+
