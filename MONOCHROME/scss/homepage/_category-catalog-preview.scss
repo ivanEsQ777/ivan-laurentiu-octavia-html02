@@ -5,10 +5,20 @@
   text-align: center;
 
   @include media-breakpoint-up('md') {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1356px;
     width: 100%;
     border-top: transparent;
+    margin-bottom: 105px;
+}
+
+  h1 {
+
+    @include media-breakpoint-up('md') {
+      margin-bottom: 23px;
+      font-size: 35px;
+    }
   }
 
   .category-action {
@@ -17,14 +27,14 @@
     @include media-breakpoint-up('md') {
       display: block;
       display: inline-block;
-      padding: 9px 20px;
+      padding: 16px 10px;
       border: 1px solid $brand-main;
       color: $brand-main;
-      font-size: 12px;
+      font-size: 22px;
       font-weight: 500;
-      width: 84px;
-      height: 32px;
-      line-height: 13px;
+      width: 115px;
+      height: 50px;
+      line-height: 22px;
       margin-top: 35px;
     }
   }
@@ -105,10 +115,28 @@
     height: 32px;
     line-height: 13px;
     margin-top: 35px;
+
+    @include media-breakpoint-up('md') {
+      display: block;
+      display: inline-block;
+      padding: 16px 10px;
+      border: 1px solid $brand-main;
+      color: $brand-main;
+      font-size: 22px;
+      font-weight: 500;
+      width: 115px;
+      height: 50px;
+      line-height: 22px;
+      margin-top: 35px;
+    }
   }
 }
 
 .content-main {
   margin-bottom: 35px;
+
+  @include media-breakpoint-up('md') {
+    margin-bottom: 0;
+  }
 }
 

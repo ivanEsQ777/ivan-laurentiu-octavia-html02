@@ -5,6 +5,17 @@
   padding: 25px 0 60px 0;
   color: $brand-main;
 
+  @include media-breakpoint-up('md') {
+    display: none;
+  }
+
+  .call-us-cta {
+
+    @include media-breakpoint-up('md') {
+      display: none;
+    }
+  }
+
   p {
     font-size: 12px;
     font-weight: 500;
@@ -12,6 +23,10 @@
     margin: 0 auto;
     display: inline-block;
     margin-bottom: 30px;
+
+    @include media-breakpoint-up('md') {
+      display: none;
+    }
 
     span {
       text-decoration: underline;
@@ -21,6 +36,10 @@
   h1 {
     font-size: 22px;
     font-weight: 500;
+
+    @include media-breakpoint-up('md') {
+      display: none;
+    }
   }
 
   .form-newsletter {
@@ -86,6 +105,10 @@
     font-weight: 500;
     display: inline-block;
     margin-bottom: 25px;
+
+    @include media-breakpoint-up('md') {
+      display: none;
+    }
   }
 
   ul {
@@ -103,3 +126,5 @@
     }
   }
 }
+
+
